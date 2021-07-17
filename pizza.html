@@ -8,6 +8,28 @@
 	<title>Independent Project 4</title>
 </head>
 <body>
-	
+	<h1>Pizza Order</h1>
+	<form id="newOrder">
+		<h2>Order a Pizza:</h2>
+		<h4>Select your topping!</h4>
+		<select class="form-control" id="toppings">
+			<option>Cheese</option>
+			<option>Pepperoni</option>
+			<option>Artichoke</option>
+			<option>Anchovy</option>
+		</select>
+		<h4>Select your pizza size!</h4>
+		<select class="form-control" id="sizes">
+			<option>10inch</option>
+			<option>12inch</option>
+			<option>16inch</option>
+		</select>
+
+		<button type="submit" class="btn">Submit Order</button>
+	</form>
+
+	<div id="orderTotal">
+		<p>"Your total is " + "$" + userbill + ", thank you for your order!</p>
+	</div>
 </body>
 </html>

@@ -25,8 +25,9 @@ function Sizes(name, price) {
 $(document).ready(function() {
 	$("form#newOrder").submit(function(event) {
 		event.preventDefault();
-		let userToppings = $("input#toppings").val();
-		let userSize = $("input#size").val();
+		let pizzaOrder = new PizzaOrder;
+		let userToppings = $("#toppings").val();
+		let userSize = $("sizes").val();
 		let userBill = total;
 	});
 });
