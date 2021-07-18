@@ -1,3 +1,7 @@
+//three pizzaOrder arguemnts, orderBill?? add before 
+//if statements with userInput value comparision for price
+// pizza restaurant object
+
 function PizzaOrder(toppings, sizes) {
 this.toppings = toppings;
 this.sizes = sizes;
