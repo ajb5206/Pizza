@@ -43,9 +43,6 @@ _This is a webpage designed to practice the usage of Javascript by way of object
 * Test: "It should return an output of '22' if the user selects Anchovy and 16inch"
 * Expect: userBill === 22;
 
-## Known Bugs
-* Needs Restaurant object to hold multiple Pizza orders
-
 ## 
 Copyright <2021> <MIT>
 

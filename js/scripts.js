@@ -36,6 +36,5 @@ $(document).ready(function() {
 		$("#userBill").text(pizzaOrder.orderBill());
 		$("#orderTotal").show();
 		$("#newOrder")[0].reset();
-		console.log(pizzaOrder);
 	});
 });
