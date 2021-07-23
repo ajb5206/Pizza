@@ -1,6 +1,6 @@
-function PizzaOrder(toppings, sizes) {
-this.toppings = toppings;
-this.sizes = sizes;
+function PizzaOrder(userToppings, userSizes) {
+this.userToppings = userToppings;
+this.userSizes = userSizes;
 }
 
 PizzaOrder.prototype.orderBill = function(){
@@ -30,11 +30,12 @@ if (userSizes === "10inch") {
 $(document).ready(function() {
 	$("form#newOrder").submit(function(event) {
 		event.preventDefault();
-		let pizzaOrder = new PizzaOrder;
 		userToppings = $("#toppings").val();
 		userSizes = $("#sizes").val();
+		let pizzaOrder = new PizzaOrder(userToppings, userSizes);
 		$("#userBill").text(pizzaOrder.orderBill());
 		$("#orderTotal").show();
 		$("#newOrder")[0].reset();
+		console.log(pizzaOrder);
 	});
 });
