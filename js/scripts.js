@@ -6,19 +6,19 @@ this.userSizes = userSizes;
 PizzaOrder.prototype.orderBill = function(){
 	let toppingsPrice = 0;
 	let sizesPrice = 0;
-	if (userToppings === "Cheese") {
+	if (this.userToppings === "Cheese") {
 		toppingsPrice += 1;
-	} else if (userToppings === "Pepperoni") {
+	} else if (this.userToppings === "Pepperoni") {
 		toppingsPrice += 1;
-} else if (userToppings === " Artichoke") {
+} else if (this.userToppings === " Artichoke") {
 		toppingsPrice += 2.5;
 } else {
 	toppingsPrice += 2;
 };
 
-if (userSizes === "10inch") {
+if (this.userSizes === "10inch") {
 	sizesPrice += 10;
-} else if (userSizes === "12inch") {
+} else if (this.userSizes === "12inch") {
 	sizesPrice += 15;
 } else {
 	sizesPrice += 20;
@@ -30,8 +30,8 @@ if (userSizes === "10inch") {
 $(document).ready(function() {
 	$("form#newOrder").submit(function(event) {
 		event.preventDefault();
-		userToppings = $("#toppings").val();
-		userSizes = $("#sizes").val();
+		let userToppings = $("#toppings").val();
+		let userSizes = $("#sizes").val();
 		let pizzaOrder = new PizzaOrder(userToppings, userSizes);
 		$("#userBill").text(pizzaOrder.orderBill());
 		$("#orderTotal").show();
