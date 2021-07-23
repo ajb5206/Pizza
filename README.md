@@ -36,6 +36,10 @@ _This is a webpage designed to practice the usage of Javascript by way of object
 ## Testing
 
 * Describe: PizzaOrder()
+* Test: "It should return user inputted values within new pizzaOrder"
+* Expect: pizzaOrder = PizzaOrder {userToppings: "Cheese", userSizes: "10inch"};
+
+* Describe: PizzaOrder()
 * Test: "It should return an output of '11' if the user selects Cheese and 10inch"
 * Expect: userBill === 11;
 
