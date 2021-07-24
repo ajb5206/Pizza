@@ -10,8 +10,8 @@ PizzaOrder.prototype.orderBill = function(){
 		toppingsPrice += 1;
 	} else if (this.userToppings === "Pepperoni") {
 		toppingsPrice += 1;
-} else if (this.userToppings === " Artichoke") {
-		toppingsPrice += 2.5;
+} else if (this.userToppings === "Artichoke") {
+		toppingsPrice += 2.50;
 } else {
 	toppingsPrice += 2;
 };
